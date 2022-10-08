@@ -1,0 +1,48 @@
+{
+    "name": "mahabub/laravel-crud-and-repository-generator",
+    "type": "library",
+    "description": "laravel crud generator with repository pattern",
+    "homepage": "https://github.com/mahabubul1/laravel-crud-and-repository-generator",
+    "keywords": [
+        "laravel",
+        "laravel-5.8",
+        "laravel-6",
+        "laravel-7",
+        "laravel-8",
+        "laravel-crud-generator",
+        "Repository",
+        "Repository Pattern",
+        "Repository Crud"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Mahabubul Alam",
+            "email": "mahabubulalam952@gmail.com",
+            "homepage": "https://github.com/mahabubul1"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^7.1 || ^7.2 || ^7.3 || ^7.4|^8.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^5.8 ||^6.0 ||^7.0 ||^8.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Mahabub\\CrudGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mahabub\\CrudGenerator\\CrudServiceProvider"
+            ],
+            "aliases": {
+                "CrudGenerator": "Mahabub\\CrudGenerator\\Facades\\CrudGenerator"
+            }
+        }
+    }
+}
